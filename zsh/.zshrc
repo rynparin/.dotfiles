@@ -9,6 +9,8 @@ ZVM_VI_INSERT_ESCAPE_BINDKEY='jk'
 eval "$(zoxide init zsh)"
 alias cd='z'
 
+# getIP
+alias getIP='ipconfig getifaddr en0'
 
 # set cmd + delete iterm2
 bindkey "^X\\x7f" backward-kill-line
@@ -172,3 +174,9 @@ unset __conda_setup
 
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ryn-mbp/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ryn-mbp/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ryn-mbp/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ryn-mbp/google-cloud-sdk/completion.zsh.inc'; fi
